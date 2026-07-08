@@ -1,0 +1,23 @@
+name: Typecheck
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Backend install et typecheck
+        working-directory: backend
+        run: |
+          npm install
+          npm run typecheck
+      - name: Portal install et typecheck
+        working-directory: portal
+        run: |
+          npm install
+          npm run typecheck
