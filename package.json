@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-social-saas",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SaaS de publication sur les réseaux sociaux via WhatsApp — squelette",
+  "workspaces": [
+    "portal",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n portal,backend -c blue,green \"npm run dev -w portal\" \"npm run dev -w backend\"",
+    "build": "npm run build -w portal && npm run build -w backend",
+    "db:setup": "psql \"$DATABASE_URL\" -f db/schema.sql && psql \"$DATABASE_URL\" -f db/seed.sql",
+    "db:reset": "psql \"$DATABASE_URL\" -c 'DROP SCHEMA public CASCADE; CREATE SCHEMA public;' && npm run db:setup"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
