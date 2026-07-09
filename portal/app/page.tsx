@@ -4,7 +4,7 @@ import Link from "next/link";
 // uniquement des utilitaires Tailwind core + SVG inline.
 
 export const metadata = {
-  title: "WhatsApp → Social · Publiez partout en envoyant une photo",
+  title: "Postly · Publiez partout en envoyant une photo",
   description:
     "Envoyez une photo sur WhatsApp, une IA rédige la légende et publie sur tous vos réseaux. Pensé pour les commerçants et indépendants.",
 };
@@ -32,8 +32,8 @@ function Nav() {
     <header className="sticky top-0 z-20 border-b border-neutral-200 bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2 font-bold">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-clay text-white">W</span>
-          <span>WhatsApp&nbsp;→&nbsp;Social</span>
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-clay text-white">P</span>
+          <span>Postly</span>
         </Link>
         <nav className="hidden items-center gap-8 text-sm text-neutral-600 md:flex">
           <a href="#how" className="hover:text-neutral-900">Comment ça marche</a>
@@ -106,8 +106,8 @@ function PhoneMockup() {
       <div className="rounded-[2rem] border-8 border-neutral-900 bg-neutral-900 shadow-2xl">
         <div className="rounded-[1.5rem] bg-[#e5ddd5] p-4">
           <div className="mb-3 flex items-center gap-3 rounded-lg bg-emerald-600 px-3 py-2 text-white">
-            <div className="grid h-8 w-8 place-items-center rounded-full bg-white/20 text-sm font-bold">W</div>
-            <div className="text-sm font-semibold">Votre assistant publication</div>
+            <div className="grid h-8 w-8 place-items-center rounded-full bg-white/20 text-sm font-bold">P</div>
+            <div className="text-sm font-semibold">Postly</div>
           </div>
 
           {/* message entrant : le commerçant */}
@@ -401,7 +401,7 @@ function Footer() {
   return (
     <footer className="border-t border-neutral-200 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-neutral-500 md:flex-row">
-        <span>© {new Date().getFullYear()} WhatsApp → Social</span>
+        <span>© {new Date().getFullYear()} Postly</span>
         <div className="flex gap-6">
           <a href="#" className="hover:text-neutral-800">Mentions légales</a>
           <a href="#" className="hover:text-neutral-800">Confidentialité</a>
