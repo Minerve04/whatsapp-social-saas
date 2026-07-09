@@ -1,4 +1,4 @@
-# WhatsApp → Social — squelette du SaaS
+# Postly — squelette du SaaS
 
 Publier sur tous les réseaux d'un commerçant en lui faisant simplement **envoyer une photo + une phrase sur WhatsApp**. Une IA rédige la légende, Metricool publie.
 
