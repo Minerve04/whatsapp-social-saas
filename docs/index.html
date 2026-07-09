@@ -273,9 +273,8 @@ fbq('track', 'PageView');
   document.getElementById('y').textContent = new Date().getFullYear();
 
   // === Enregistrement des emails dans un Google Sheet ===
-  // Remplacez URL_DU_SCRIPT_GOOGLE par l'URL /exec de votre Google Apps Script
-  // (voir les instructions fournies). Chaque email devient une ligne du Sheet.
-  var SHEET_ENDPOINT = "URL_DU_SCRIPT_GOOGLE";
+  // Endpoint Google Apps Script (déployé en application web).
+  var SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbxgQF6LH5k-tQOxGtYXBvFOEu_hasnLUj0cqsl6-3mN7Fm-5r2WlqWdLUKMPoMR8kx2/exec";
   var form = document.getElementById('lead-form');
   form.addEventListener('submit', function(e){
     e.preventDefault();
